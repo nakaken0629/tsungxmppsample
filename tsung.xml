@@ -48,6 +48,11 @@
         </request>
       </transaction>
 
+      <!-- presence online -->
+      <request>
+        <jabber type="presence:broadcast" show="chat" status="Available to chat" ack="no_ack"/>
+      </request>
+
       <!-- wait 10 seconds -->
       <thinktime value="10"></thinktime>
 
