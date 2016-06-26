@@ -13,7 +13,7 @@
   <!-- register 200000 users in less than 15 minutes  -->
   <load>
     <arrivalphase phase="1" duration="15" unit="minute">
-      <users maxnumber="5" interarrival="1" unit="second"></users>
+      <users maxnumber="50" interarrival="0.1" unit="second"></users>
     </arrivalphase>
   </load>
   
@@ -55,6 +55,13 @@
 
       <!-- wait 10 seconds -->
       <thinktime value="10"></thinktime>
+
+      <!-- send chat message -->
+      <transaction name="online">
+        <request>
+          <jabber type="chat" ack="no_ack" size="32" destination="random"/>
+        </request>
+      </transaction>
 
       <!-- disconnect -->
       <request>
