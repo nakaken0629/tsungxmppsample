@@ -19,7 +19,7 @@
   
   <options>
     <option type="ts_jabber" name="global_number" value="5"></option>
-    <option type="ts_jabber" name="userid_max" value="10000"></option>
+    <option type="ts_jabber" name="userid_max" value="50"></option>
     <option type="ts_jabber" name="domain" value="openfire.itvirtuoso.red"></option>
     <option type="ts_jabber" name="username" value="user"></option>
     <option type="ts_jabber" name="passwd" value="password"></option>
